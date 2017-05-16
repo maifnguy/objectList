@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Object List</title>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="styles/stylesheet.css"/> 
+  </head>
+  
+  <body>
+    <h1>Grocery List</h1>
+    
+    <div id="addItem">
+      <button type="button" id="showForm">Add New Item</button>
+    </div>
+    
+    <div id="myTable">
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Onion</td>
+          <td>2</td>
+        </tr>
+        <tbody id="myInput">
+        </tbody>
+      </table>
+    </div>
+    
+    <div>
+      <form id="itemForm">
+        <label for="item">Item:
+          <input type="text" id="item">
+        </label>
+        <label for="quantity">Quantity:
+          <input type="number" id="quantity" min="0">
+        </label>
+        <button type="submit" id="submit">Submit</button> 
+        <button type="button" id="cancel">Cancel</button>
+      </form>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
+  </body>
+</html>
+    
